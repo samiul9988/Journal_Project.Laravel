@@ -123,7 +123,7 @@ Route::middleware(['userRole:admin','auth'])->prefix('admin')->group(function(){
     Route::post('/membership-forms',[MembershipController::class,'membership'])->name('membership');
     Route::get('/Allmembers-forms',[MembershipController::class,'Allmembers'])->name('Allmembers');
     Route::get('/Allmembers-forms/{id}/details',[MembershipController::class,'details'])->name('details');
-    Route::get('reateuser/{id}',[MembershipController::class,'CreateUser'])->name('createuser');
+    Route::get('createuser/{id}',[MembershipController::class,'CreateUser'])->name('createuser');
 
 
 
